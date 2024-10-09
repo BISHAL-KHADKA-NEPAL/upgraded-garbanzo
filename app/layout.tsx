@@ -3,12 +3,13 @@ import "./globals.css";
 import Script from "next/script";
 import { Metadata } from "next";
 import localFont from "next/font/local";
-import Header from "./hdfot/Header"; // Corrected import for Header
-import Footer from "./hdfot/Footer"; // Corrected import for Footer
+import Header from "./hdfot/Header";
+import Footer from "./hdfot/Footer";
+import Head from "next/head"; // Import Head from next/head
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
-  title: "Next.js Clerk Template",
+  title: "NEPTA",
   description:
     "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
   openGraph: { images: ["/og.png"] },
@@ -31,6 +32,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <Head>
+        {/* Link to the external favicon */}
+        <link rel="icon" href="https://thinknepta.sirv.com/Screenshot%202024-08-31%20014215.png" type="image/png" />
+      </Head>
       <ClerkProvider
         appearance={{
           variables: { colorPrimary: "#000000" },
@@ -49,9 +54,9 @@ export default function RootLayout({
         }}
       >
         <body className={`min-h-screen flex flex-col antialiased`}>
-          <Header /> {/* Inserted Header component */}
-          <main className="flex-grow">{children}</main> {/* Main content */}
-          <Footer /> {/* Inserted Footer component */}
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </body>
       </ClerkProvider>
 

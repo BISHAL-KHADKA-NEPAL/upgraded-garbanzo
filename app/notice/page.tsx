@@ -2,8 +2,18 @@
 import React, { useEffect, useState } from 'react';
 import './app.css'; // Import your CSS file containing the loader styles
 
+interface Job {
+    path: string;
+    company_icon: string;
+    company_name: string;
+    job_title: string;
+    job_description: string;
+    job_type: string;
+    location: string;
+}
+
 const JobList = () => {
-    const [jobs, setJobs] = useState([]);
+    const [jobs, setJobs] = useState<Job[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -19,10 +29,10 @@ const JobList = () => {
 
     if (loading) {
         return (
-            <div className="loader-container"> {/* Centered loading container */}
-                <div className="loader"></div> {/* Spinner */}
+            <div className="loader-container">
+                <div className="loader"></div>
             </div>
-        ); // Show spinner while loading
+        );
     }
 
     return (

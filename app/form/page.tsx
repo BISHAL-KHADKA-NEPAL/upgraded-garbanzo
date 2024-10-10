@@ -1,12 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         phone: '',
-       
         inquiryType: '', // This key will now match with the select
         message: '',
     });
@@ -40,15 +39,14 @@ const ContactForm = () => {
         },
     ];
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // Replace with your actual form submission logic, e.g., using fetch or axios
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
@@ -59,8 +57,7 @@ const ContactForm = () => {
                 name: formData.name,
                 email: formData.email,
                 phone: formData.phone,
-               
-                inquiryType: formData.inquiryType, // This will now hold the selected university
+                inquiryType: formData.inquiryType,
                 message: formData.message,
                 subject: 'New Contact Form Submission',
                 from_name: 'My Website',
@@ -132,7 +129,7 @@ const ContactForm = () => {
                             <div>
                                 <label className="font-medium">University</label>
                                 <select
-                                    name="inquiryType" // Changed to match the state key
+                                    name="inquiryType"
                                     value={formData.inquiryType}
                                     onChange={handleChange}
                                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
@@ -157,13 +154,13 @@ const ContactForm = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full px-6 py-3 mt-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 focus:bg-indigo-700"
+                                className="w-full px-6 py-3 mt-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 focus:bg-indigo-700 transition-colors"
                             >
-                                Send Message
+                                Submit
                             </button>
                         </form>
                         {success && (
-                            <p className="text-green-500 mt-4">Your message has been sent successfully!</p>
+                            <div className="mt-4 text-green-600">Your message has been sent successfully!</div>
                         )}
                     </div>
                 </div>

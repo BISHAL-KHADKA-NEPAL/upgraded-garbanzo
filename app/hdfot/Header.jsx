@@ -22,7 +22,7 @@ export default () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navigation = [
-        { title: "Features", path: "./dashboard" },
+        { title: "Notices", path: "./notice" },
         { title: "Inquiry", path: "./form" },
         { title: "Customers", path: "javascript:void(0)" },
         { title: "Pricing", path: "javascript:void(0)" }

@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import './App.css'; // Import your CSS file containing the loader styles
+import './app.css'; // Import your CSS file containing the loader styles
 
 const JobList = () => {
     const [jobs, setJobs] = useState([]);

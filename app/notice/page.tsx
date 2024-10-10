@@ -9,19 +9,36 @@ interface Job {
     job_title: string;
     job_description: string;
     job_type: string;
-    location: string;
+    date: string; // Updated to include date instead of location
 }
 
 const JobList = () => {
     const [jobs, setJobs] = useState<Job[]>([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null); // State for error message
+    const [searchTerm, setSearchTerm] = useState<string>(''); // State for search term
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const response = await fetch('https://gist.githubusercontent.com/BISHAL-KHADKA-NEPAL/1e8e21a7099638e527babcdd7a0d01df/raw/7340cc06cdeb6ef00252739efadced9c94191908/gistfile1.txt');
-            const data = await response.json();
-            setJobs(data);
-            setLoading(false); // Set loading to false once data is fetched
+            try {
+                const response = await fetch('https://gist.githubusercontent.com/BISHAL-KHADKA-NEPAL/1e8e21a7099638e527babcdd7a0d01df/raw/f4f0fdb2f3adb006991b36570e39272026cd41f6/gistfile1.txt');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                console.log('Fetched Jobs:', data); // Check the fetched data
+
+                // Sort jobs by date in descending order
+                const sortedJobs = data.sort((a: Job, b: Job) => {
+                    return new Date(b.date).getTime() - new Date(a.date).getTime();
+                });
+                setJobs(sortedJobs);
+            } catch (error: any) {
+                console.error('There has been a problem with your fetch operation:', error);
+                setError('Failed to load jobs. Please try again later.'); // Set error message
+            } finally {
+                setLoading(false); // Set loading to false regardless of success or error
+            }
         };
 
         fetchJobs();
@@ -35,6 +52,19 @@ const JobList = () => {
         );
     }
 
+    if (error) {
+        return (
+            <div className="error-message">
+                {error} {/* Display error message */}
+            </div>
+        );
+    }
+
+    // Filter jobs based on the search term
+    const filteredJobs = jobs.filter(job =>
+        job.job_title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
         <section className="py-28">
             <div className="max-w-screen-lg mx-auto px-4 md:px-8">
@@ -42,8 +72,18 @@ const JobList = () => {
                     <h1 className="text-gray-800 text-2xl font-extrabold sm:text-3xl mt-11">University Notices</h1>
                     <p className="text-gray-600 mt-2">Get notices before everyone.</p>
                 </div>
+                {/* Search Input */}
+                <div className="mt-4">
+                    <input
+                        type="text"
+                        placeholder="Search by Notice title..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="border rounded-md p-2 w-full"
+                    />
+                </div>
                 <ul className="mt-12 divide-y space-y-3">
-                    {jobs.map((job, idx) => (
+                    {filteredJobs.map((job, idx) => (
                         <li key={idx} className="px-4 py-5 duration-150 hover:border-white hover:rounded-xl hover:bg-gray-50">
                             <a href={job.path} className="space-y-3">
                                 <div className="flex items-center gap-x-3">
@@ -61,7 +101,7 @@ const JobList = () => {
                                         {job.job_type}
                                     </span>
                                     <span className="flex items-center gap-2">
-                                        {job.location}
+                                        {job.date} {/* Displaying the date */}
                                     </span>
                                 </div>
                             </a>

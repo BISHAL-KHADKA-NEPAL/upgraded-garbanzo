@@ -21,7 +21,7 @@ const JobList = () => {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch('https://gist.githubusercontent.com/BISHAL-KHADKA-NEPAL/1e8e21a7099638e527babcdd7a0d01df/raw/f4f0fdb2f3adb006991b36570e39272026cd41f6/gistfile1.txt');
+                const response = await fetch('https://gist.githubusercontent.com/BISHAL-KHADKA-NEPAL/1e8e21a7099638e527babcdd7a0d01df/raw/7edeee472985e9fde65a05c1b3bfb1a6cc291b7e/gistfile1.txt');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

@@ -24,7 +24,7 @@ export default () => {
     const navigation = [
         { title: "Notices", path: "./notice" },
         { title: "Inquiry", path: "./form" },
-        { title: "Customers", path: "javascript:void(0)" },
+        { title: "Notes", path: "./notes" },
         { title: "Pricing", path: "javascript:void(0)" }
     ];
 

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-const ErrorMessage = ({ onClose }) => { // Accept onClose prop
+const ErrorMessage = ({ onClose }) => {
     return (
         <div className="mt-12 mx-4 px-4 rounded-md border-l-4 border-red-500 bg-red-50 md:max-w-2xl md:mx-auto md:px-8">
             <div className="flex justify-between py-3">
@@ -28,7 +28,7 @@ const ErrorMessage = ({ onClose }) => { // Accept onClose prop
                         </p>
                     </div>
                 </div>
-                <button className="self-start text-red-500" onClick={onClose}> {/* Call onClose when clicked */}
+                <button className="self-start text-red-500" onClick={onClose}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -52,7 +52,7 @@ const StudyHub = () => {
     const [jobs, setJobs] = useState([]);
     const [filteredJobs, setFilteredJobs] = useState([]);
     const [hasSearched, setHasSearched] = useState(false);
-    const [showError, setShowError] = useState(false); // State to control error message visibility
+    const [showError, setShowError] = useState(false);
 
     useEffect(() => {
         const fetchJobs = async () => {
@@ -76,16 +76,16 @@ const StudyHub = () => {
             job.job_title.toLowerCase().includes(lowerCaseQuery)
         );
         setFilteredJobs(results);
-        setShowError(results.length === 0); // Show error if no results
+        setShowError(results.length === 0);
     };
 
     const handleCloseError = () => {
-        setShowError(false); // Function to hide the error message
+        setShowError(false);
     };
 
     return (
         <section>
-            <div className="max-w-screen-xl mx-auto px-4 py-20 gap-12 text-gray-600 md:px-8">
+            <div className="max-w-screen-xl mx-auto px-4 pt-20 pb-12 gap-12 text-gray-600 md:px-8"> {/* Applied pt-20 and pb-12 here */}
                 <div className="space-y-8 max-w-90xl mx-auto text-center mt-16">
                     <h1 className="text-md text-indigo-600 font-semibold">
                         Welcome to Your Study Hub!
@@ -134,7 +134,7 @@ const StudyHub = () => {
                             </div>
                         ))
                     ) : (
-                        hasSearched && showError && <ErrorMessage onClose={handleCloseError} /> // Show error message only if set to show
+                        hasSearched && showError && <ErrorMessage onClose={handleCloseError} />
                     )}
                 </div>
 

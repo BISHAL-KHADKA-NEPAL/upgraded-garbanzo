@@ -32,7 +32,7 @@ export default () => {
         <div className="flex items-center justify-between py-5 md:block">
             <a href="/">
                 <img
-                    src="https://thinknepta.sirv.com/Screenshot%202024-08-31%20014215.png"
+                    src="https://thinknepta.sirv.com/ezgif-5-cffa42a2b7.gif"
                     width={150}
                     height={80}
                     alt="Nepta Logo"

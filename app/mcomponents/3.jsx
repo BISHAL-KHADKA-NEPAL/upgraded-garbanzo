@@ -30,7 +30,7 @@ export default () => {
             desc: "Stay updated with our news.",
             link: {
                 name: "Visit our Page",
-                href: "javascript:void(0)",
+                href: "https://www.facebook.com/profile.php?id=100086984447908",
             },
         },
         {
@@ -48,7 +48,7 @@ export default () => {
             desc: "Check out our latest posts.",
             link: {
                 name: "View our Profile",
-                href: "javascript:void(0)",
+                href: "https://www.instagram.com/og.bishal_/",
             },
         },
     ];

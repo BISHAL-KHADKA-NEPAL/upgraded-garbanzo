@@ -22,17 +22,17 @@ export default () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navigation = [
-        { title: "Notices", path: "./notice" },
+        { title: "Notices", path: "./error" },
         { title: "Inquiry", path: "./form" },
-        { title: "Notes", path: "./notes" },
-        { title: "Pricing", path: "javascript:void(0)" }
+        { title: "Notes", path: "./error" },
+        { title: "Pricing", path: "error" }
     ];
 
     const Brand = () => (
         <div className="flex items-center justify-between py-5 md:block">
             <a href="/">
                 <img
-                    src="https://thinknepta.sirv.com/ezgif-5-cffa42a2b7.gif"
+                    src="https://thinknepta.sirv.com/Screenshot%202024-08-31%20014215.png"
                     width={150}
                     height={80}
                     alt="Nepta Logo"

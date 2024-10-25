@@ -12,7 +12,7 @@ export default () => {
                     Exciting ! Our YouTube channel is now live! 🚀
                     </p>
                 </div>
-                <a href="https://www.youtube.com/" className="inline-block w-full mt-3 py-2 px-3 text-center text-red-600 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-lg sm:w-auto sm:mt-0 sm:text-sm">
+                <a href="./error" className="inline-block w-full mt-3 py-2 px-3 text-center text-red-600 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-lg sm:w-auto sm:mt-0 sm:text-sm">
                     Subscribe now!
                 </a>
             </div>

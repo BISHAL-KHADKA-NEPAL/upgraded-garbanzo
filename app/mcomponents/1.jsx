@@ -57,7 +57,7 @@ const StudyHub = () => {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch('https://gist.githubusercontent.com/BISHAL-KHADKA-NEPAL/ae11a8403368cb37195fb5c1f9ec5490/raw/f0b51a15ccff875f9476a1bce645f9c000e0749f/gistfile1.txt');
+                const response = await fetch('https:/gist.githubuserconten51a15ccff875f9476a1bce645f9c000e0749f/gistfile1.txt');
                 const data = await response.json();
                 setJobs(data);
             } catch (error) {

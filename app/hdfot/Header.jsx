@@ -22,7 +22,7 @@ export default () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     const navigation = [
-        { title: "Notices", path: "./error" },
+        { title: "Tournaments", path: "./efootball" },
         { title: "Inquiry", path: "./form" },
         { title: "Notes", path: "./error" },
         { title: "Pricing", path: "error" }

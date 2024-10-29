@@ -23,10 +23,8 @@ function FreeFireEsports() {
         rel="dns-prefetch"
         href="https://dl.dir.freefiremobile.com"
       />
-      <link
-        rel="shortcut icon"
-        href="https://dl.dir.freefiremobile.com/common/web_event/esports_brand/LOGO_20230111.png"
-      />
+     
+     
       <link
         rel="stylesheet"
         href="https://dl.dir.freefiremobile.com/common/web_event/ff_esport_official/css/swiper.min.css"

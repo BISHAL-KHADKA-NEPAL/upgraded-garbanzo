@@ -10,9 +10,6 @@ import Head from "next/head"; // Import Head from next/head
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
   title: "NEPTA",
-  description:
-    "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
-  openGraph: { images: ["/og.png"] },
 };
 
 const geistSans = localFont({

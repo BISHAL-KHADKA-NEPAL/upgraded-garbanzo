@@ -3,7 +3,7 @@ import React from 'react';
 
 const ShareComponent = () => {
     const handleShare = async () => {
-        const shareContent = 'Nepa: Think Trunk'; // Replace with your actual content
+        const shareContent = 'Nepta'; // Replace with your actual content
         const shareUrl = window.location.href;
         
         if (navigator.share) {

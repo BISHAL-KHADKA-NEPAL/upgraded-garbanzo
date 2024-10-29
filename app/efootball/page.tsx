@@ -2,7 +2,7 @@ import React from "react";
 
 function FreeFireEsports() {
   return (
-    <div style={{ paddingTop: "75px" }}>
+    <div style={{ paddingTop: "72px", paddingBottom: "0px" }}>
       {/* Head Metadata */}
       <meta charSet="UTF-8" />
       <meta name="renderer" content="webkit" />
@@ -12,11 +12,11 @@ function FreeFireEsports() {
         content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
       />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge, chrome=1" />
-      <title>Free Fire Esports</title>
-      <meta name="keywords" content="Free Fire" />
-      <meta name="description" content="Free Fire" />
+      <title>eFootball TiharChampionship</title>
+      <meta name="keywords" content="eFootball" />
+      <meta name="description" content="eFootball" />
       <link rel="canonical" href="" />
-      <meta name="apple-mobile-web-app-title" content="eSports for Free Fire" />
+      <meta name="apple-mobile-web-app-title" content="eSports for eFootball" />
       <meta httpEquiv="Cache-Control" content="no-transform" />
       <meta httpEquiv="Cache-Control" content="no-siteapp" />
       <link
@@ -45,36 +45,31 @@ function FreeFireEsports() {
         <article className="home-inner">
           <img
             className="home-one-banner"
-            src="https://dl.dir.freefiremobile.com/common/web_event/hash/8b9aedd65c26df37b99998e89512442a.jpeg"
-            title="FFWS2024FALLChampion"
+            src="https://thinknepta.sirv.com/pixelcut-export.png"
+            title="eFootball"
           />
           <section className="home-esports">
             <section className="home-intro">
               <div className="home-intro-content">
                 <div className="ff-title">
-                  <h2 className="ff-main-title">About Free Fire Esports</h2>
+                <h2 className="ff-main-title" style={{ textTransform: "none" }}>About eFootball Tihar Championship</h2>
                 </div>
                 <div className="ff-card home-intro-card">
                   <div className="home-intro-card-inner">
                     <img
                       className="home-intro-bg"
-                      src="https://dl.dir.freefiremobile.com/common/web_event/hash/b4a2e1905670ea61987ea6fc9ffb730bjpg"
+                      src="https://upcdn.io/W142iqa/raw/pixelcut-export.jpeg"
                       alt=""
                     />
                   </div>
                   <div className="ff-mask home-intro-mask">
                     <div className="home-intro-inner">
-                      <h2 className="home-intro-title font-bold">
-                        Free Fire World Series 2023
-                      </h2>
-                      <p className="home-intro-desc">
-                        We are excited to unveil the first glimpse of the fifth
-                        edition of its flagship Free Fire World Series (FFWS),
-                        which is set to take place this November in Bangkok,
-                        Thailand. FFWS 2023 will comprise two stages — the Group
-                        Stage across six match days between Nov 10 to 19, and
-                        the Grand Finals from Nov 24 to 26.
-                      </p>
+                    <h2 className="home-intro-title font-bold" style={{ textTransform: "none" }}>
+  eFootball Tihar Championship 2024
+</h2>
+<p className="home-intro-desc" style={{ textAlign: "justify", hyphens: "auto", wordSpacing: "0.1em" }}>
+    We are thrilled to unveil the first edition of our flagship eFootball Tihar Championship, set to take place this November. The tournament will feature a unique format with Ribbonson stages, culminating in an exciting Grand Final. Stay tuned for more details and get ready for an unforgettable eFootball experience this Tihar!
+</p>
                     </div>
                   </div>
                 </div>
@@ -82,12 +77,12 @@ function FreeFireEsports() {
             </section>
 
             {/* News Section */}
-            <section className="home-news">
+            <section className="home-news" style={{ paddingBottom: "0px", marginBottom: "0px" }}>
               <div className="home-filter home-news-bg"></div>
               <div className="home-news-module">
                 <div className="ff-title">
                   <h2 className="ff-main-title">NEWS</h2>
-                  <a className="ff-sub-title" href="/news/global/en/">
+                  <a className="ff-sub-title" href="./error">
                     MORE +
                   </a>
                 </div>
@@ -96,167 +91,42 @@ function FreeFireEsports() {
                   <li className="news-item">
                     <div className="news-cover">
                       <a
-                        href="/news/global/en/566/FFWS2024FALLChampion"
-                        title="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
+                        href="https://upcdn.io/W142iqa/raw/pixelcut-export%20(1).png"
+                        title="eFootball Tihar Championship"
                         rel="nofollow"
                       >
-                       <img
-  className="news-cover-img"
-  src="https://dl.dir.freefiremobile.com/common/web_event/hash/cd2437b2ac37e287a2e43d5c47f6b80e.jpeg"
-  loading="lazy"
-  alt="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
-/>
+                        <img
+                          className="news-cover-img"
+                          src="https://upcdn.io/W142iqa/raw/pixelcut-export%20(1).png"
+                          loading="lazy"
+                          alt="eFootball Tihar Championship"
+                        />
                       </a>
                     </div>
                     <div className="news-info">
-                      <h2 className="news-title">
-                        <a href="/news/global/en/566">
-                          The unstoppable Buriram United Esports secures
-                          Thailand’s third international Free Fire championship
-                          title in a row
-                        </a>
-                      </h2>
-                      <section className="news-desc">
-                        After dominating the Knockout and Point Rush stages
-                        throughout, the Thai team eventually defeated the other
-                        11 teams with a total score of 100 points during the
-                        Grand Final
-                      </section>
+                    <h2 className="news-title">
+  <a href="./payment">
+    Click To Register for Championship
+  </a>
+</h2>
+<section className="news-desc">
+  With an exciting tournament format featuring Ribbonson stages, teams from across the region will compete for glory and the ultimate title in this highly anticipated event.
+</section>
+
                     </div>
                     <div className="news-time publish-time">
-                      16/10
+                      10/29/2024
                     </div>
                   </li>
-                  <li className="news-item">
-                    <div className="news-cover">
-                      <a
-                        href="/news/global/en/566/FFWS2024FALLChampion"
-                        title="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
-                        rel="nofollow"
-                      >
-                       <img
-  className="news-cover-img"
-  src="https://dl.dir.freefiremobile.com/common/web_event/hash/cd2437b2ac37e287a2e43d5c47f6b80e.jpeg"
-  loading="lazy"
-  alt="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
-/>
-                      </a>
-                    </div>
-                    <div className="news-info">
-                      <h2 className="news-title">
-                        <a href="/news/global/en/566">
-                          The unstoppable Buriram United Esports secures
-                          Thailand’s third international Free Fire championship
-                          title in a row
-                        </a>
-                      </h2>
-                      <section className="news-desc">
-                        After dominating the Knockout and Point Rush stages
-                        throughout, the Thai team eventually defeated the other
-                        11 teams with a total score of 100 points during the
-                        Grand Final
-                      </section>
-                    </div>
-                    <div className="news-time publish-time">
-                      16/10
-                    </div>
-                  </li>
-                  <li className="news-item">
-                    <div className="news-cover">
-                      <a
-                        href="/news/global/en/566/FFWS2024FALLChampion"
-                        title="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
-                        rel="nofollow"
-                      >
-                       <img
-  className="news-cover-img"
-  src="https://dl.dir.freefiremobile.com/common/web_event/hash/cd2437b2ac37e287a2e43d5c47f6b80e.jpeg"
-  loading="lazy"
-  alt="The unstoppable Buriram United Esports secures Thailand’s third international Free Fire championship title in a row"
-/>
-                      </a>
-                    </div>
-                    <div className="news-info">
-                      <h2 className="news-title">
-                        <a href="/news/global/en/566">
-                          The unstoppable Buriram United Esports secures
-                          Thailand’s third international Free Fire championship
-                          title in a row
-                        </a>
-                      </h2>
-                      <section className="news-desc">
-                        After dominating the Knockout and Point Rush stages
-                        throughout, the Thai team eventually defeated the other
-                        11 teams with a total score of 100 points during the
-                        Grand Final
-                      </section>
-                    </div>
-                    <div className="news-time publish-time">
-                      16/10
-                    </div>
-                  </li>
-                  
                   {/* Add other news items here */}
                 </ul>
-                <div className="more-inner">
-                  <a href="/news/global/en" className="more-btn font-bold">
-                    MORE
-                  </a>
-                </div>
-              </div>
-            </section>
-          </section>
-
-          {/* Timeline */}
-          <section className="home-show">
-            <section className="home-show-module">
-              <div className="ff-title">
-                <h2 className="ff-main-title">TIMELINE</h2>
-              </div>
-              <div className="home-event">
-                <img
-                  className="home-event-img pc"
-                  src="https://dl.dir.freefiremobile.com/common/web_event/hash/2c876a683cf3ccf7157ead4c2e6fdf37.jpg"
-                  alt="Timeline Event"
-                />
               </div>
             </section>
           </section>
         </article>
       </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p className="footer-logo">
-          <img
-            src="https://dl.dir.freefiremobile.com/common/web_event/esports_brand/logo.png"
-            alt="FreeFire"
-          />
-        </p>
-        <section className="footer-content">
-          <div className="footer-link">
-            <a href="https://ff.garena.com">FREE_FIRE</a>
-          </div>
-          <div className="footer-link">
-            <a href="https://ff.garena.com/en/faq/">FOR_PARENTS</a>
-          </div>
-          <div className="footer-link">
-            <a href="http://content.garena.com/legal/tos/tos_en.html">
-              Terms of Service
-            </a>
-          </div>
-          <div className="footer-link">
-            <a href="https://contentgarena-a.akamaihd.net/legal/pp/pp_en.html">
-              Privacy Policy
-            </a>
-          </div>
-        </section>
-        <div className="footer-copyright">
-          Copyright © Garena International. All rights reserved.
-        </div>
-      </footer>
     </div>
   );
 }
 
-export default FreeFireEsports; 
+export default FreeFireEsports;

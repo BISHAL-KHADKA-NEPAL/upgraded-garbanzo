@@ -58,7 +58,7 @@ function FreeFireEsports() {
                   <div className="home-intro-card-inner">
                     <img
                       className="home-intro-bg"
-                      src="https://upcdn.io/W142iqa/raw/pixelcut-export.jpeg"
+                      src="https://thinknepta.sirv.com/pixelcut-export.jpeg"
                       alt=""
                     />
                   </div>
@@ -91,13 +91,13 @@ function FreeFireEsports() {
                   <li className="news-item">
                     <div className="news-cover">
                       <a
-                        href="https://upcdn.io/W142iqa/raw/pixelcut-export%20(1).png"
+                        href="./payment"
                         title="eFootball Tihar Championship"
                         rel="nofollow"
                       >
                         <img
                           className="news-cover-img"
-                          src="https://upcdn.io/W142iqa/raw/pixelcut-export%20(1).png"
+                          src="https://thinknepta.sirv.com/pixelcut-export%20(1).png"
                           loading="lazy"
                           alt="eFootball Tihar Championship"
                         />

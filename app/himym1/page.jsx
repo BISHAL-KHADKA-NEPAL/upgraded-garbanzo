@@ -10,23 +10,23 @@ export default () => {
             items: [
                 {
                     prop: "Episode 1",
-                    link: "https://streamtape.com/v/3GQ8Bb8zxgIdW77/How_I_Met_Your_Mother_%282005%29_-_S01E01_-_Pilot_%281080p_AMZN_WEB-DL_x265_Silence%29.mkv.mp4"
+                    link: "../epone"
                 },
                 {
                     prop: "Episode 2",
-                    link: "https://streamtape.com/v/Q06BLBPza9t0mrm/How_I_Met_Your_Mother_%282005%29_-_S01E02_-_Purple_Giraffe_%281080p_AMZN_WEB-DL_x265_Silence%29.mkv.mp4"
+                    link: "../eptwo"
                 },
                 {
                     prop: "Episode 3",
-                    link: "https://streamtape.com/v/YV2RDjyYd4iv9kG/How_I_Met_Your_Mother_%282005%29_-_S01E03_-_Sweet_Taste_of_Liberty_%281080p_AMZN_WEB-DL_x265_Silence%29.mkv.mp4"
+                    link: "../epthree"
                 },
                 {
                     prop: "Episode 4",
-                    link: "https://streamtape.com/v/jjQjybdZwQHLGM/How_I_Met_Your_Mother_%282005%29_-_S01E04_-_Return_of_the_Shirt_%281080p_AMZN_WEB-DL_x265_Silence%29.mkv"
+                    link: "../epfour"
                 },
                 {
                     prop: "Episode 5",
-                    link: "https://streamtape.com/v/JvoeBm02JWCjwb1/How_I_Met_Your_Mother_%282005%29_-_S01E05_-_Okay_Awesome_%281080p_AMZN_WEB-DL_x265_Silence%29.mkv.mp4"
+                    link: "../epfive"
                 },
             ]
         }

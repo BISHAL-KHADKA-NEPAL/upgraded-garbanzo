@@ -24,9 +24,19 @@ export default () => {
     const navigation = [
         { title: "Tournaments", path: "./efootball" },
         { title: "Inquiry", path: "./form" },
-        { title: "Notes", path: "./error" },
+        { title: "Movies", path: "./movies" },
         { title: "Pricing", path: "error" }
     ];
+
+    const handleNavigation = (path) => {
+        if (!userId && path === "./movies") {
+            // Redirect to sign-in if not signed in and trying to access movies
+            window.location.href = "./sign-in";
+        } else {
+            // Otherwise, navigate to the specified path
+            window.location.href = path;
+        }
+    };
 
     const Brand = () => (
         <div className="flex items-center justify-between py-5 md:block">
@@ -70,7 +80,11 @@ export default () => {
                             <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                                 {navigation.map((item, idx) => (
                                     <li key={idx} className="text-gray-700 hover:text-gray-900">
-                                        <a href={item.path} className="block">
+                                        <a 
+                                            href="#" 
+                                            className="block" 
+                                            onClick={() => handleNavigation(item.path)} // Use the new handleNavigation function
+                                        >
                                             {item.title}
                                         </a>
                                     </li>

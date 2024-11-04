@@ -1,6 +1,6 @@
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
-import Script from "next/script";
+import Script from "next/script";  // Import Script from next/script
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "./hdfot/Header";
@@ -56,6 +56,13 @@ export default function RootLayout({
           <Footer />
         </body>
       </ClerkProvider>
+
+      {/* Google Ads Script */}
+      <Script 
+        async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9875194408791853" 
+        crossOrigin="anonymous" 
+      />
 
       {/* Scripts for PrismJS */}
       <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" />

@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <Head>
-        {/* Link to the external favicon */}
-        <link rel="icon" href="https://thinknepta.sirv.com/Screenshot%202024-08-31%20014215.png" type="image/png" />
+        {/* Other head elements */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9875194408791853" crossOrigin="anonymous"></script>
       </Head>
       <ClerkProvider
         appearance={{
@@ -56,13 +56,6 @@ export default function RootLayout({
           <Footer />
         </body>
       </ClerkProvider>
-
-      {/* Google Ads Script */}
-      <Script 
-        async 
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9875194408791853" 
-        crossOrigin="anonymous" 
-      />
 
       {/* Scripts for PrismJS */}
       <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" />

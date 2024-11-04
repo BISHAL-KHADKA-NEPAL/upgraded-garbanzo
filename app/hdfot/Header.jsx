@@ -23,9 +23,9 @@ export default () => {
 
     const navigation = [
         { title: "Tournaments", path: "./efootball" },
-        { title: "Inquiry", path: "./form" },
-        { title: "Movies", path: "./form" },
-        { title: "Pricing", path: "./form" }
+        { title: "Contact", path: "./form" },
+        { title: "About", path: "./about" },
+        { title: "Privacy", path: "./privacy" }
     ];
 
     const handleNavigation = (path) => {
